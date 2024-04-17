@@ -88,7 +88,7 @@ body {
 }
 
 .box2 {
-    height: 100vh;
+    height: 100%;
     background-image: url(image/bg3.jpg);
     background-size: 100%;
     opacity: 0.5;
