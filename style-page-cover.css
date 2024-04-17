@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFirstFont-1;
+    src: url(font/stay-classy.bold.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont-2;
+    src: url(font/Southampton.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont-3;
+    src: url(font/shalma.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont-4;
+    src: url(font/gotham-medium.ttf);
+}
+
+.box {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container2-1 {
+    text-align: center;
+}
+
+.container2-1 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+.container2-1 .judul {
+    margin-bottom: 25%;
+    font-family: myFirstFont-4;
+}
+
+.container2-1 .tanggal {
+    font-family: myFirstFont-4;
+    line-height: 1px;
+    margin-top: 5%;
+}
+
+.container2-1 .pengantin {
+    font-family: myFirstFont-3;
+    font-size: 2800%;
+    color: black;
+    padding-bottom: 0;
+    line-height: 0;
+}
+
+.container2-1 .buka-undangan {
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container2-1 .buka-undangan:hover {
+    color: black;
+    background-color: white;
+    opacity: 50%;
+}
+
+.box2 {
+    height: 100vh;
+    background-image: url(image/bg3.jpg);
+    background-size: 100%;
+    opacity: 0.5;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #31363F;
+    transition: opacity 1000s, visibility 3s;
+    z-index: 3;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid white;
+    border-top-color: gold;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*untuk layar device berukuran 100px*/
+@media screen and (min-width: 100px) {
+    .container2-1 .judul {
+     font-size: 20px;
+     margin-bottom: 28%;
+    }
+ 
+    .container2-1 .pengantin {
+     font-size: 120px;
+    }
+ 
+    .container2-1 .tanggal {
+     font-size: 20px;
+     margin-top: 10%;
+    }
+ 
+    .box2 {
+     background-position: right;
+     background-size: cover;
+    }
+
+    .container2-1 .buka-undangan {
+        font-size: 10px;
+    }
+}
+
+/*untuk layar device berukuran 350px*/
+@media screen and (min-width: 350px) {
+    .container2-1 .judul {
+     font-size: 25px;
+     margin-bottom: 28%;
+    }
+ 
+    .container2-1 .pengantin {
+     font-size: 170px;
+    }
+ 
+    .container2-1 .tanggal {
+     font-size: 25px;
+     margin-top: 10%;
+    }
+ 
+    .box2 {
+     background-position: right;
+     background-size: cover;
+    }
+
+    .container2-1 .buka-undangan {
+        font-size: 12px;
+    }
+}
+
+/*untuk layar device berukuran 576px*/
+@media screen and (min-width: 576px) {
+   .container2-1 .judul {
+    font-size: 25px;
+    margin-bottom: 28%;
+   }
+
+   .container2-1 .pengantin {
+    font-size: 200px;
+   }
+
+   .container2-1 .tanggal {
+    font-size: 25px;
+    margin-top: 10%;
+   }
+
+   .box2 {
+    background-position: right;
+    background-size: cover;
+   }
+
+   .container2-1 .buka-undangan {
+    font-size: 15px;
+   }
+}
+
+/*untuk layar device berukuran 768px*/
+@media screen and (min-width: 768px) {
+    .container2-1 .judul {
+     font-size: 30px;
+     margin-bottom: 25%;
+    }
+ 
+    .container2-1 .pengantin {
+     font-size: 300px;
+    }
+ 
+    .container2-1 .tanggal {
+     font-size: 30px;
+     margin-top: 10%;
+    }
+ 
+    .box2 {
+     background-position: right;
+     background-size: cover;
+    }
+}
+
+/*untuk layar device berukuran 992px*/
+@media screen and (min-width: 992px) {
+    .container2-1 .judul {
+     font-size: 30px;
+     margin-bottom: 25%;
+    }
+ 
+    .container2-1 .pengantin {
+     font-size: 450px;
+    }
+ 
+    .container2-1 .tanggal {
+     font-size: 30px;
+     margin-top: 10%;
+    }
+ 
+    .box2 {
+     background-position: right;
+     background-size: cover;
+    }
+}
+
+/*untuk layar device berukuran 1200px*/
+@media screen and (min-width: 1200px) {
+    .container2-1 .judul {
+     font-size: 30px;
+     margin-bottom: 25%;
+    }
+ 
+    .container2-1 .pengantin {
+     font-size: 500px;
+    }
+ 
+    .container2-1 .tanggal {
+     font-size: 30px;
+     margin-top: 10%;
+    }
+ 
+    .box2 {
+     background-position: right;
+     background-size: cover;
+    }
+}
+
