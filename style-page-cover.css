@@ -29,7 +29,7 @@ body {
 
 .box {
     position: absolute;
-    height: 100%;
+    height: 80vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -49,7 +49,7 @@ body {
 }
 
 .container2-1 .judul {
-    margin-bottom: 25%;
+    margin-bottom: 10%;
     font-family: myFirstFont-4;
 }
 
@@ -88,10 +88,10 @@ body {
 }
 
 .box2 {
-    height: 100vh;
+    height: 100dvh;
     background-image: url(image/bg3.jpg);
     background-size: 100%;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .loader {
@@ -145,9 +145,14 @@ body {
  
     .container2-1 .tanggal {
      font-size: 20px;
-     margin-top: 10%;
+     margin-top: 20%;
     }
  
+    .box {
+        margin-top: 27%;
+        margin-bottom: 20%;
+    }
+
     .box2 {
      background-position: right;
      background-size: cover;
@@ -171,7 +176,7 @@ body {
  
     .container2-1 .tanggal {
      font-size: 25px;
-     margin-top: 10%;
+     margin-top: 20%;
     }
  
     .box2 {
@@ -181,6 +186,14 @@ body {
 
     .container2-1 .buka-undangan {
         font-size: 12px;
+    }
+}
+
+/*untuk layar device berukuran 450px*/
+@media screen and (min-width: 450px) {
+    .box {
+        margin-top: 17%;
+    }
     }
 }
 
@@ -197,7 +210,7 @@ body {
 
    .container2-1 .tanggal {
     font-size: 25px;
-    margin-top: 10%;
+    margin-top: 20%;
    }
 
    .box2 {
@@ -223,7 +236,7 @@ body {
  
     .container2-1 .tanggal {
      font-size: 30px;
-     margin-top: 10%;
+     margin-top: 20%;
     }
  
     .box2 {
@@ -245,7 +258,7 @@ body {
  
     .container2-1 .tanggal {
      font-size: 30px;
-     margin-top: 10%;
+     margin-top: 20%;
     }
  
     .box2 {
@@ -267,7 +280,7 @@ body {
  
     .container2-1 .tanggal {
      font-size: 30px;
-     margin-top: 10%;
+     margin-top: 20%;
     }
  
     .box2 {
