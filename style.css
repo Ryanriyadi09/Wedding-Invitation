@@ -26,11 +26,6 @@
     margin: 0;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .box1 {
     color: black;
     height: 100vh;
@@ -95,6 +90,18 @@ a:hover {
     
     a {
         font-size: 70%;
+    }
+}
+
+/*untuk layar device berukuran 100px*/
+@media screen and (min-width: 1020px) {
+    .kalimat2 {
+        font-size: 500%;
+        margin: 5% 0;
+    }
+
+    .tbl-hitam {
+        margin-top: 5%;
     }
 }
 
