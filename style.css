@@ -33,21 +33,22 @@ p {
 
 .box1 {
     color: black;
-    height: 97.5vh;
-    display: ;
+    height: 100vh;
     background-image: url(image/bg3.jpg);
     background-size: cover;
     background-position: right;
 }
 
 .box1-1 {
-    height: 97.5vh;
+    height: 100vh;
     background-color: white;
     opacity: 70%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    left: 0;
+    top: 0;
 }
 
 .box1-1-1 {
@@ -79,4 +80,27 @@ a:hover {
 
 .tbl-hitam {
     margin-top: 10%;
+}
+
+/*untuk layar device berukuran 100px*/
+@media screen and (min-width: 750px) {
+    .box1-1-1 {
+        font-size: 150%;
+    }
+    
+    .kalimat2 {
+        font-size: 400%;
+        margin: 8% 0;
+    }
+    
+    a {
+        font-size: 70%;
+    }
+}
+
+/*untuk layar device berukuran 100px*/
+@media screen and (min-width: 1100px) {
+    .kalimat2 {
+        font-size: 500%;
+    }
 }
