@@ -28,14 +28,14 @@
 
 .box1 {
     color: black;
-    height: 85vh;
+    height: 88vh;
     background-image: url(image/bg3.jpg);
     background-size: cover;
     background-position: right;
 }
 
 .box1-1 {
-    height: 85vh;
+    height: 88vh;
     background-color: white;
     opacity: 70%;
     display: flex;
