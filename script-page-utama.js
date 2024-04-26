@@ -18,21 +18,24 @@ const x = setInterval(function () {
 }, 1000);
 
 
-const audio = document.getElementById("audioPlayer");
-const playButton = document.getElementById("play");
-const pauseButton = document.getElementById("pause");
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  const audio = document.getElementById("audioPlayer");
+  const playButton = document.getElementById("play");
+  const pauseButton = document.getElementById("pause");
 
-function playMusic() {
-    if (audio.paused) {
-        audio.play();
-    }
-}
+  loader.classList.add("loader-hidden");
 
-function pauseMusic() {
-    if (!audio.paused) {
-        audio.pause();
-    }
-}
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+      audio.play(); // Start playing audio after the transition of box1
+  });
 
-playButton.addEventListener("click", playMusic);
-pauseButton.addEventListener("click", pauseMusic);
+  playButton.addEventListener("click", () => {
+      audio.play();
+  });
+
+  pauseButton.addEventListener("click", () => {
+      audio.pause();
+  });
+});
