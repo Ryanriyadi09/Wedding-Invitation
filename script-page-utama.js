@@ -18,31 +18,21 @@ const x = setInterval(function () {
 }, 1000);
 
 
-let play = document.getElementById("play");
-let pause = document.getElementById("pause");
-let audio = new Audio("music/Backsound.mp3");
-          
-// Menambahkan properti loop agar lagu diputar berulang-ulang
-audio.loop = true;
-  
+const audio = document.getElementById("audioPlayer");
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+
 function playMusic() {
-  audio.play();
+    if (audio.paused) {
+        audio.play();
+    }
 }
-  
+
 function pauseMusic() {
-  audio.pause();
+    if (!audio.paused) {
+        audio.pause();
+    }
 }
-  
-play.addEventListener("click", playMusic);
-pause.addEventListener("click", pauseMusic);
 
-window.addEventListener("load", () => {
- const loader = document.querySelector(".loader");
-
- loader.classList.add("loader-hidden");
-
- loader.addEventListener("transitionend", () => {
-  document.body.removeChild(loader);
-  playMusic();
-  })
-})  
+playButton.addEventListener("click", playMusic);
+pauseButton.addEventListener("click", pauseMusic);
