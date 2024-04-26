@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+#audioPlayer {
+    display: none;
+}
+
 .tombol-musik {
     position: fixed;
     z-index: 2;
