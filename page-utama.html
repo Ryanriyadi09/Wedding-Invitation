@@ -21,18 +21,23 @@
 </head>
 <body>
     <!--untuk fitur musik autoplay-->
-    <div class="loader"></div>
+    <div class=""></div>
     <div class="tombol-musik">
         <button id="play"></button>
         <button id="pause"></button>
     </div>
+
+    <audio id="audioPlayer" controls autoplay loop>
+        <source src="music/Backsound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     
     <!---->
 
     <section id="halaman-1">
         <div class="box1">
             <div class="box1-1">
-                <div class="box1-1-1">
+                <div data-aos="zoom-in-up" class="box1-1-1">
                     <div class="kalimat1">
                         <p>The Wedding Of</p>
                     </div>
@@ -43,7 +48,7 @@
                         June 30, 2024
                     </div>
                     <div class="tbl-hitam">
-                        <a href="">Save The Date</a>
+                        <a href="" target="_blank">Save The Date</a>
                     </div>
                     <div class="mousey">
                         <div class="scroller"></div>
@@ -112,18 +117,18 @@
                 </div>
                 <div class="akad" data-aos="fade-down-right" data-aos-duration="2000">
                     <p class="font-style">Akad</p>
-                    <p>Pukul 18.30 WIB - 19.30 WIB</p>
+                    <p>Minggu, 30 Juni 2024<br>Pukul 18.30 WIB - 19.30 WIB</p>
                 </div>
                 <div class="resepsi" data-aos="fade-down-left" data-aos-duration="2000">
                     <p class="font-style">Resepsi</p>
-                    <p>Pukul 19.30 WIB - 20.00 WIB</p>
+                    <p>Minggu, 30 Juni 2024<br>Pukul 19.30 WIB - 22.00 WIB</p>
                 </div>
                 <div class="maps" data-aos="zoom-out-down" data-aos-duration="2000">
                     <div class="teks-lihat-maps">
                         <a href="https://maps.app.goo.gl/pLtF8nwvw998aNwQ6" target="_blank">Lihat Google Maps</a>
                     </div>
                     <div class="lihat-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.024770129681!2d106.4617195!3d-6.2629134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4207154b4347fb%3A0x15e074267289735!2sTaman%20Ide!5e0!3m2!1sen!2sid!4v1712759863858!5m2!1sen!2sid" width="700" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.024770129681!2d106.4617195!3d-6.2629134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4207154b4347fb%3A0x15e074267289735!2sTaman%20Ide!5e0!3m2!1sen!2sid!4v1712759863858!5m2!1sen!2sid" width="" height="" style="border:0;" allowfullscreen="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="googlemaps"></iframe>
                     </div>
                     <p>Taman Ide, Tigaraksa, Kec. Tigaraksa, Kabupaten Tangerang, Banten</p>
                 </div>
@@ -134,7 +139,7 @@
                 <p>Merupakan suatu kerhomatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i, berkenan hadir untuk memberikan do'a restunya. Atas perhatiannya kami ucapkan terimakasih.</p>
                 <p class="font-style">Wassalamualaikum Warahmatullahi Wabarakatuh</p>
                 <div class="copyright">
-                    <p>Build with &#9829 Yathira</p>
+                    Build with &#9829 Yathira
                 </div>
             </div>
         </div>       
