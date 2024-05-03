@@ -44,8 +44,7 @@
 }
 
 .box0-1 {
-    height: ;
-    min-height: 100vh;
+    height: 100svh;
     background-color: white;
     opacity: 70%;
     display: flex;
@@ -249,14 +248,14 @@ html {
 
 .box1 {
     color: black;
-    height: 100vh;
+    height: 100svh;
     background-image: url(image/bg3.jpg);
     background-size: cover;
     background-position: right;
 }
 
 .box1-1 {
-    height: 100vh;
+    height: 100svh;
     background-color: white;
     opacity: 70%;
     display: flex;
